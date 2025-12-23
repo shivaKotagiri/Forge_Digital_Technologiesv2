@@ -33,7 +33,7 @@ export default function SecondaryNavbar() {
             Direct Inquiry
             <span className="h-[1px] w-4 bg-zinc-800 transition-all group-hover:w-8 group-hover:bg-blue-600"></span>
             <span className="text-zinc-200 lowercase tracking-normal group-hover:text-blue-400 transition-colors">
-              partner@forgedigital.com
+              Info@forgedigitaltechnologies.com
             </span>
           </a>
 
