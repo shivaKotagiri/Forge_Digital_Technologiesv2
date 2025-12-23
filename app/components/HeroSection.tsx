@@ -2,7 +2,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative w-full overflow-hidden bg-white pt-20 pb-16 md:pt-32 md:pb-24"
+      className="relative w-full overflow-hidden bg-white pt-10 pb-16 md:pt-20 md:pb-24"
     >
       {/* 1. INDUSTRY BACKGROUND: Subtle Grid Pattern */}
        <div className="absolute inset-0 z-0 opacity-[0.03] mask-[linear-gradient(to_bottom,white,transparent)]">
@@ -53,17 +53,43 @@ export default function HeroSection() {
             </a>
           </div>
 
-          {/* SOCIAL PROOF */}
-          <div className="flex flex-wrap items-start justify-start gap-8 border-t border-zinc-100 pt-10 md:justify-center">
-            <div className="flex flex-col items-start md:items-center">
-              <span className="text-3xl font-semibold text-zinc-900">25+</span>
-              <span className="text-[10px] font-semibold tracking-widest text-zinc-400 uppercase">Projects Delivered</span>
+          {/* SOCIAL PROOF: Modern Status Section */}
+          <div className="flex flex-col items-center gap-6 border-t border-zinc-100 pt-10 md:flex-row md:gap-8">
+            
+            {/* 1. Avatar Pile */}
+            <div className="flex items-center -space-x-4">
+               {/* Avatar 1 */}
+               <div className="flex h-12 w-12 items-center justify-center rounded-full border-[3px] border-white bg-zinc-200">
+                  <svg className="h-6 w-6 text-zinc-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+               </div>
+               {/* Avatar 2 */}
+               <div className="flex h-12 w-12 items-center justify-center rounded-full border-[3px] border-white bg-blue-100">
+                  <span className="font-bold text-blue-600">JD</span>
+               </div>
+               {/* Avatar 3 */}
+               <div className="flex h-12 w-12 items-center justify-center rounded-full border-[3px] border-white bg-zinc-900">
+                  <span className="font-bold text-white">MK</span>
+               </div>
+               {/* Avatar 4: Count */}
+               <div className="flex h-12 w-12 items-center justify-center rounded-full border-[3px] border-white bg-zinc-100">
+                  <span className="text-xs font-bold text-zinc-600">+20</span>
+               </div>
             </div>
-            <div className="h-10 w-px bg-zinc-100 hidden md:block" />
-            <div className="flex flex-col items-start md:items-center">
-              <span className="text-3xl font-semibold text-zinc-900">4.9/5</span>
-              <span className="text-[10px] font-semibold tracking-widest text-zinc-400 uppercase">Client Rating</span>
+
+            {/* 2. Rating & Text */}
+            <div className="flex flex-col items-center md:items-start">
+              <div className="flex items-center gap-1">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <svg key={star} className="h-4 w-4 fill-blue-600 text-blue-600" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="mt-1 text-sm font-medium text-zinc-600">
+                <span className="font-bold text-zinc-900">4.9/5 Rating</span> from 25+ Clients
+              </p>
             </div>
+
           </div>
         </div>
 
