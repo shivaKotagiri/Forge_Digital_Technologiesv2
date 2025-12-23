@@ -59,10 +59,10 @@ export default function Footer() {
               <a href="/contact" className="text-sm font-medium text-zinc-600 hover:text-blue-600 transition-colors">
                 Contact Us
               </a>
-              <a href="mailto:you@example.com" className="text-sm font-medium text-zinc-600 hover:text-blue-600 transition-colors">
+              <a href="Info@forgedigitaltechnologies.com" className="text-sm font-medium text-zinc-600 hover:text-blue-600 transition-colors">
                 Email
               </a>
-              <a href="#" className="text-sm font-medium text-zinc-600 hover:text-blue-600 transition-colors">
+              <a href="https://www.linkedin.com/company/student-forge?trk=public_profile_topcard-current-companyq" className="text-sm font-medium text-zinc-600 hover:text-blue-600 transition-colors">
                 LinkedIn
               </a>
               <a href="#" className="text-sm font-medium text-zinc-600 hover:text-blue-600 transition-colors">
